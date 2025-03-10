@@ -17,4 +17,4 @@ Este é um projeto de um jogo chamado **Mario Jump** desenvolvido em **HTML**, *
 
 ## 🌐 Acesse Aqui
 
-Você pode acessar a calculadora diretamente através deste [link](https://marcellofigueiredo.github.io/Mario-Jump-Original/). Bom Jogo.# Mario-Jump-Original
+Você pode acessaro jogo diretamente através deste [link](https://marcellofigueiredo.github.io/Mario-Jump-Original/). Bom Jogo.# Mario-Jump-Original
