@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Mario-Jump/css/start.css">
+    <title>Mario Jump - Iniciar Jogo</title>
+</head>
+<body>
+    <div class="start-container">
+        <h1>Mario Jump</h1>
+        <p>Pressione "Start" para começar!</p>
+        <button id="start-btn">Start</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+    <script>
+        // Adiciona um evento de clique no botão para redirecionar para a página do jogo online
+        document.getElementById("start-btn").addEventListener("click", function() {
+            // Redireciona para o link do jogo hospedado externamente
+            window.location.href = "https://marcellofigueiredo.github.io/Mario-Jump/";
+        });
+    </script>
+</body>
+</html>

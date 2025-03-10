@@ -1,0 +1,80 @@
+/* Definir a fonte retrô */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Estilos para o body com fundo e centralização */
+body {
+    font-family: 'Press Start 2P', cursive; /* Fonte retrô dos anos 90 */
+    background-image: url('images/mario.jpeg'); /* Caminho relativo para a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    margin: 0;
+    height: 100vh; /* Ocupa toda a tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    filter: brightness(70%); /* Ajuste de brilho para dar um tom mais suave */
+}
+
+/* Container centralizado para o conteúdo */
+.start-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+    padding: 50px;
+    border-radius: 25px; /* Bordas mais arredondadas */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8); /* Sombra para destacar */
+    border: 5px solid #FF6347; /* Borda neon estilo retrô */
+    max-width: 380px; /* Largura máxima */
+    width: 100%;
+    text-align: center;
+}
+
+/* Título do jogo */
+h1 {
+    font-size: 48px; /* Aumentei o tamanho do título */
+    color: #FF6347; /* Cor vibrante estilo retrô */
+    text-shadow: 4px 4px 15px rgba(255, 255, 255, 0.9), 0 0 25px #FF6347; /* Sombra intensa e efeito neon */
+    margin-bottom: 20px;
+}
+
+/* Texto de instrução abaixo do título */
+p {
+    font-size: 20px; /* Aumentei o tamanho do texto */
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* Efeito de sombra mais forte */
+}
+
+/* Estilo do botão de Start */
+#start-btn {
+    font-family: 'Press Start 2P', cursive; /* Fonte retrô */
+    font-size: 22px; /* Aumentei o tamanho da fonte */
+    color: white;
+    background-color: #1E90FF; /* Azul vibrante */
+    border: 3px solid #4682B4; /* Borda azul neon */
+    border-radius: 15px; /* Bordas mais arredondadas */
+    padding: 18px 40px; /* Botão mais largo */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 20px rgba(30, 144, 255, 0.9); /* Efeito neon brilhante no botão */
+}
+
+/* Efeito de hover no botão */
+#start-btn:hover {
+    background-color: #4682B4; /* Cor do botão ao passar o mouse */
+    transform: scale(1.1); /* Aumento no botão ao passar o mouse */
+    box-shadow: 0px 0px 30px rgba(30, 144, 255, 1); /* Aumento do brilho ao passar o mouse */
+}
+
+/* Efeito de clique no botão */
+#start-btn:active {
+    transform: scale(1); /* Retorna ao tamanho normal ao clicar */
+    box-shadow: 0px 0px 15px rgba(30, 144, 255, 0.6); /* Reduz brilho no clique */
+}
+
+/* Remover o outline ao focar o botão */
+#start-btn:focus {
+    outline: none;
+}

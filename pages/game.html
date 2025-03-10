@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <!-- Link do CSS -->
+        <link rel="stylesheet" href="../Mario-Jump/css/style.css">
+        <script src="../Mario-Jump/js/script.js" defer></script> <!-- Corrigir o caminho do JS -->
+
+        <!-- Adicionando a fonte retrô do Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+        <title>Mario Jump</title>
+    </head>
+    <body>
+        <div class="game-board">
+            <img src="../images/clouds.png" class="clouds" alt="Clouds">
+            <img src="../images/mario.gif" class="mario" alt="Mario">
+            <img src="../images/pipe.png" class="pipe" alt="Pipe">
+        </div>
+        <div id="timer">Tempo: 0</div>
+    
+        <!-- Mensagem de game over -->
+        <div id="game-over-message">Seu tempo foi de 0 segundos!</div>
+    
+        <!-- Botão de reiniciar -->
+        <button id="restart-btn" style="display:none;">Reiniciar</button>
+    </body>
+</html>

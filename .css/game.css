@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(35, 160, 35);
+    margin: 0 auto;
+    position:relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+/* Fonte retrô */
+body {
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Estilo para o contador de tempo */
+#timer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: white;
+    z-index: 10;
+}
+
+/* Estilo do bloco para a mensagem de tempo */
+#game-over-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    color: white;
+    background: linear-gradient(45deg, #1e3c72, #2a5298); /* Azul gradiente */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para um efeito digital */
+    z-index: 10;
+    display: none; /* Inicialmente escondido */
+    text-align: center;
+    width: 60%; /* Largura do bloco */
+    max-width: 400px; /* Tamanho máximo do bloco */
+}
+
+/* Animação para dar destaque à mensagem quando aparece */
+#game-over-message.show {
+    animation: pop 0.5s ease-in-out;
+}
+
+/* Estilo do botão de reiniciar */
+#restart-btn {
+    position: absolute;
+    top: 60%; /* Coloca abaixo da mensagem de game over */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: white;
+    background: #FF6347; /* Cor retrô de fundo */
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+    display: none; /* Inicialmente escondido */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para dar um efeito de destaque */
+}
+
+#restart-btn:hover {
+    background: #FF4500; /* Cor mais intensa ao passar o mouse */
+}
+
+
+.pipe {
+    position: absolute ;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s  infinite linear;
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.clouds {
+   position: absolute;
+    width: 550px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+@keyframes pipe-animation {
+    from {
+        right:-80px;
+    }
+
+    to {
+        right: 100%;;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes pop {
+    0% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
