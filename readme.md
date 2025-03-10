@@ -1,7 +1,5 @@
 # 🎮Mario Jump
 
-![Imagem de Mario Jump](../Mario/images/capa.png)
-
 Este é um projeto de um jogo chamado **Mario Jump** desenvolvido em **HTML**, **CSS** e **JavaScript**. O objetivo do jogo é evitar os obstáculos por mais tempo possível.🎮
 
 ## 🚀 Tecnologias Utilizadas
